@@ -24,6 +24,11 @@ int main(void) {
       setPWM(notes[i][0]);
       wait(notes[i][1]);
     }
+    
+    setPWM(0);
+    wait(500);
+    wait(500);
+    wait(500);
 
     for(volatile int i = 0; i < (sizeof(chorus) / (2*sizeof(int))); i++) {
       setPWM(chorus[i][0]);

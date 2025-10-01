@@ -43,7 +43,7 @@ void togglePin(int pin) {
 }
 
 // Enables clock for tim15 and connects timer to gpio pin a6
-void setupPWM_TIM15(void){
+void setupPWM_TIM16(void){
     SET_BIT(RCC->APB2ENR, 17);
     SET_BIT(TIM16->CR1, 0);
     // setGPIO
