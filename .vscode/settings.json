@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.s": "riscv",
+        "stm32l432kc_gpio.h": "c",
+        "stdint.h": "c"
+    }
+}
