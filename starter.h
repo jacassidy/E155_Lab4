@@ -112,14 +112,11 @@ const int notes[][2] = {
 {523,	125},
 {494,	125},
 {440,	500},
-{  0,	0}};
+{0,    1000}
+};
 
 
 int chorus[][2] = {
-
-    // ===== Intro pickup (mm.1–4 right-hand pick lead-in heard with vocal entrance) =====
-    // (silent for voice)
-    {0, 1428}, {0, 1428}, {0, 1428}, {0, 714},
 
     // ===== Verse 1 (mm.9–12): “I still see your shadows in my room, Can’t take back the love that I gave you,” =====
     // m.9
@@ -244,4 +241,5 @@ int chorus[][2] = {
     {587, 357},  // D5  "for-"
     {554, 714},  // C#5 "-get"
     {494, 1428}, // B4  "me" (held)
+    {0, 0}, // B4  "me" (held)
 };

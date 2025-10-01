@@ -20,9 +20,14 @@ int main(void) {
     // Connect system clock to tim 1, 15, 16
     configureTimers();
     
-    for(int i = 0; i <sizeof(notes); i++) {
+    for(volatile int i = 0; i < (sizeof(notes) / (2*sizeof(int))); i++) {
       setPWM(notes[i][0]);
       wait(notes[i][1]);
+    }
+
+    for(volatile int i = 0; i < (sizeof(chorus) / (2*sizeof(int))); i++) {
+      setPWM(chorus[i][0]);
+      wait(chorus[i][1]);
     }
 
     return 0;
